@@ -1,0 +1,150 @@
+@use './utilities/index' as *;
+
+:root {
+	--light-red2: #ff8c66;
+	--blue: #5847eb;
+	--soft-blue: #56c2e6;
+	--light-red: #ff5c7c;
+	--lime-green: #4acf81;
+	--violet: #7536d3;
+	--soft-orange: #f1c65b;
+
+	--very-dark-blue: #0f1424;
+	--dark-blue: #1c1f4a;
+	--desaturated-blue: #6f76c8;
+	--pale-blue: #bdc1ff;
+}
+
+body {
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
+	background-color: var(--very-dark-blue);
+}
+
+.main {
+	display: grid;
+	row-gap: 2em;
+	width: 95vw;
+	max-width: 316px;
+}
+
+.first {
+	background-color: var(--dark-blue);
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+.first-img {
+	width: 70px;
+	border: 3px solid white;
+	border-radius: 50%;
+}
+
+.first-up {
+	padding: 1.7em;
+	display: flex;
+	align-items: center;
+	column-gap: 1.3em;
+	border-radius: 1em;
+	background-color: var(--blue);
+}
+
+.report {
+	color: var(--pale-blue);
+	font-size: 1.4rem;
+}
+
+.name {
+	font-size: 2.4rem;
+	color: white;
+	font-weight: 300;
+}
+
+.first-down {
+	padding: 1.5em 1.7em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.first-down-text {
+	color: var(--desaturated-blue);
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.active {
+	color: var(--pale-blue);
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	height: 147px;
+	border-radius: 1em;
+	overflow: hidden;
+}
+
+.box-up {
+	width: 100%;
+	height: 55px;
+	background-image: url('../images/icon-work.svg');
+	background-repeat: no-repeat;
+	background-position: 95% 28%;
+	background-color: var(--light-red2);
+}
+
+.text-content {
+	position: absolute;
+	top: 24%;
+	width: 100%;
+	border-radius: 1em;
+	padding: 1.5em;
+	background-color: var(--dark-blue);
+}
+
+.text-up,
+.text-down {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text-up {
+	padding-bottom: 0.5em;
+}
+
+.activity,
+.hours {
+	color: white;
+}
+
+.activity {
+	font-weight: 500;
+}
+
+.hours {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.dots,
+.time {
+	color: var(--pale-blue);
+}
+
+.dots {
+	font-size: 2rem;
+}
+
+.time {
+	font-size: 1.3rem;
+}
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+// - Weights: 300, 400, 500
