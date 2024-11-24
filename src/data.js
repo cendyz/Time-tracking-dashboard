@@ -121,3 +121,18 @@ export const list = [
 		color: '#f1c65b',
 	},
 ]
+
+export const buttons = [
+	{
+		id: 1,
+		text: 'daily',
+	},
+	{
+		id: 2,
+		text: 'weekly',
+	},
+	{
+		id: 3,
+		text: 'monthly',
+	},
+]

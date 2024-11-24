@@ -69,14 +69,15 @@ body {
 	justify-content: space-between;
 }
 
-.first-down-text {
+.first-down-btns {
 	color: var(--desaturated-blue);
 	text-transform: capitalize;
 	cursor: pointer;
+	font-size: 1.7rem;
 }
 
 .active {
-	color: var(--pale-blue);
+	color: white;
 }
 
 .box {
