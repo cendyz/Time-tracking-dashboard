@@ -17,7 +17,6 @@ const RestList = ({ text }) => {
 						<div
 							className='box-up'
 							style={{
-								// backgroundImage: `url(${image})`,
 								backgroundColor: `${color}`,
 							}}>
 							<img src={image} alt='' className='box-up-icon' />
