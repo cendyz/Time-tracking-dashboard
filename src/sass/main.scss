@@ -102,6 +102,9 @@ body {
 }
 
 .text-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 	grid-row: 3/4;
 	padding: 1.5em;
 	background-color: var(--dark-blue);
