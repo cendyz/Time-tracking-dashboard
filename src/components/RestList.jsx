@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { list } from '../data'
 import { v4 as uuidv4 } from 'uuid'
+import dots from '../images/icon-ellipsis.svg'
 
 const RestList = ({ text }) => {
 	return (
@@ -16,13 +17,15 @@ const RestList = ({ text }) => {
 						<div
 							className='box-up'
 							style={{
-								backgroundImage: `url(${image})`,
+								// backgroundImage: `url(${image})`,
 								backgroundColor: `${color}`,
-							}}></div>
+							}}>
+							<img src={image} alt='' className='box-up-icon' />
+						</div>
 						<div className='text-content'>
 							<div className='text-up'>
 								<p className='activity'>{title}</p>
-								<p className='dots'>•••</p>
+								<img src={dots} alt='Three dots' className='dots' />
 							</div>
 							<div className='text-down'>
 								<p className='hours'>{current}hrs</p>
